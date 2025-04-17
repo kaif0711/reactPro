@@ -54,7 +54,7 @@ export default function TextForm(props) {
       </div>
       <div className="container my-4  text-center" style={{background: props.mode==='dark'?'#042743':'white',color: props.mode==='dark'?'white':'#042743'}}>
         <h2>Text summary</h2><hr />
-        <p> {text.split(' ').filter(word=>word.trim()!=="").length} <b>number of words</b> and {text.replace(/[^a-zA-Z]/g,"").length} <b>number of alphabets</b></p><hr />
+        <p> {text.split(' ').filter(word=>word.trim()!=="").length} <b>Number of words</b> and {text.replace(/[^a-zA-Z]/g,"").length} <b>Number of alphabets</b></p><hr />
         <p><span>{(0.008 * text.split(' ').length)}</span><b> Minutes to read</b></p>
         <hr />        
         <p>{text.split('\n').filter(p => p.trim() !== "").length} <b>Number of paragraph</b></p><hr />
